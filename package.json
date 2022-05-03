@@ -1,0 +1,27 @@
+{
+  "name": "msal-node-auth-code",
+  "version": "1.0.0",
+  "description": "sample app for msal-node",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "jest",
+    "test:agc": "jest --testMatch [ '**/test/**/*agc*.spec.ts' ]",
+    "build:package": "cd ../../../lib/msal-common && npm run build && cd ../msal-node && npm run build",
+    "start:build": "npm run build:package && npm start",
+    "install:local": "npm install ../../../lib/msal-node"
+  },
+  "author": "Microsoft",
+  "license": "MIT",
+  "dependencies": {
+    "@azure/msal-node": "^1.0.1",
+    "cliargs": "^0.1.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2"
+  },
+  "devDependencies": {
+    "@types/yargs": "^17.0.10",
+    "jest": "^26.0.4"
+  }
+}

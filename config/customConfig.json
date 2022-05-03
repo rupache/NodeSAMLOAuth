@@ -1,0 +1,23 @@
+{
+    "authOptions":
+        {
+            "clientId": "776a03d6-0edd-4c20-b9b0-2e08341d186e",
+            "authority": "https://login.microsoftonline.com/common/",
+            "clientSecret": "CLIENT_SECRET_VALUE_NOT_THE_SECRET"
+        },
+    "request":
+    {
+        "authCodeUrlParameters": {
+            "scopes": ["user.read"],
+            "redirectUri": "http://localhost:3000/redirect"
+        },
+        "tokenRequest": {
+            "redirectUri": "http://localhost:3000/redirect",
+            "scopes": ["user.read"]
+        }
+    },
+    "resourceApi":
+    {
+        "endpoint": "https://graph.microsoft.com/v1.0/me"
+    }
+}
